@@ -13,6 +13,7 @@
 		E82BB6201A18EB6F00A41482 /* KVCLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61F1A18EB6F00A41482 /* KVCLens.m */; };
 		E82BB6231A18EC1C00A41482 /* ArrayLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6221A18EC1C00A41482 /* ArrayLens.m */; };
 		E82BB6291A19040A00A41482 /* StructLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6281A19040A00A41482 /* StructLens.m */; };
+		E84E42181A1921D6008F1A87 /* PersonExample.m in Sources */ = {isa = PBXBuildFile; fileRef = E84E42171A1921D6008F1A87 /* PersonExample.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		E82BB6221A18EC1C00A41482 /* ArrayLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayLens.m; sourceTree = "<group>"; };
 		E82BB6271A19040A00A41482 /* StructLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructLens.h; sourceTree = "<group>"; };
 		E82BB6281A19040A00A41482 /* StructLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructLens.m; sourceTree = "<group>"; };
+		E84E42161A1921D6008F1A87 /* PersonExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonExample.h; sourceTree = "<group>"; };
+		E84E42171A1921D6008F1A87 /* PersonExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonExample.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		E81D6CB11A17FEED00ACA39D = {
 			isa = PBXGroup;
 			children = (
+				E84E42151A1921C0008F1A87 /* Examples */,
 				E81D6CBC1A17FEED00ACA39D /* ObjCLenses */,
 				E81D6CBB1A17FEED00ACA39D /* Products */,
 			);
@@ -85,6 +89,15 @@
 				E82BB6281A19040A00A41482 /* StructLens.m */,
 			);
 			path = ObjCLenses;
+			sourceTree = "<group>";
+		};
+		E84E42151A1921C0008F1A87 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				E84E42161A1921D6008F1A87 /* PersonExample.h */,
+				E84E42171A1921D6008F1A87 /* PersonExample.m */,
+			);
+			path = Examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +161,7 @@
 				E82BB61D1A18EB0800A41482 /* CompositeLens.m in Sources */,
 				E82BB6201A18EB6F00A41482 /* KVCLens.m in Sources */,
 				E82BB6291A19040A00A41482 /* StructLens.m in Sources */,
+				E84E42181A1921D6008F1A87 /* PersonExample.m in Sources */,
 				E82BB61A1A18EAEA00A41482 /* Lens.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
