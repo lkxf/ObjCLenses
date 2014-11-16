@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E81D6CBE1A17FEED00ACA39D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E81D6CBD1A17FEED00ACA39D /* main.m */; };
+		E82BB61A1A18EAEA00A41482 /* Lens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6191A18EAEA00A41482 /* Lens.m */; };
+		E82BB61D1A18EB0800A41482 /* CompositeLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61C1A18EB0800A41482 /* CompositeLens.m */; };
+		E82BB6201A18EB6F00A41482 /* KVCLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61F1A18EB6F00A41482 /* KVCLens.m */; };
+		E82BB6231A18EC1C00A41482 /* ArrayLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6221A18EC1C00A41482 /* ArrayLens.m */; };
+		E82BB6291A19040A00A41482 /* StructLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6281A19040A00A41482 /* StructLens.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,16 @@
 /* Begin PBXFileReference section */
 		E81D6CBA1A17FEED00ACA39D /* ObjCLenses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjCLenses; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81D6CBD1A17FEED00ACA39D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E82BB6181A18EAEA00A41482 /* Lens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lens.h; sourceTree = "<group>"; };
+		E82BB6191A18EAEA00A41482 /* Lens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lens.m; sourceTree = "<group>"; };
+		E82BB61B1A18EB0800A41482 /* CompositeLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositeLens.h; sourceTree = "<group>"; };
+		E82BB61C1A18EB0800A41482 /* CompositeLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeLens.m; sourceTree = "<group>"; };
+		E82BB61E1A18EB6F00A41482 /* KVCLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCLens.h; sourceTree = "<group>"; };
+		E82BB61F1A18EB6F00A41482 /* KVCLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCLens.m; sourceTree = "<group>"; };
+		E82BB6211A18EC1C00A41482 /* ArrayLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayLens.h; sourceTree = "<group>"; };
+		E82BB6221A18EC1C00A41482 /* ArrayLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayLens.m; sourceTree = "<group>"; };
+		E82BB6271A19040A00A41482 /* StructLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructLens.h; sourceTree = "<group>"; };
+		E82BB6281A19040A00A41482 /* StructLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructLens.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +72,17 @@
 		E81D6CBC1A17FEED00ACA39D /* ObjCLenses */ = {
 			isa = PBXGroup;
 			children = (
+				E82BB6211A18EC1C00A41482 /* ArrayLens.h */,
+				E82BB6221A18EC1C00A41482 /* ArrayLens.m */,
+				E82BB61B1A18EB0800A41482 /* CompositeLens.h */,
+				E82BB61C1A18EB0800A41482 /* CompositeLens.m */,
+				E82BB61E1A18EB6F00A41482 /* KVCLens.h */,
+				E82BB61F1A18EB6F00A41482 /* KVCLens.m */,
+				E82BB6181A18EAEA00A41482 /* Lens.h */,
+				E82BB6191A18EAEA00A41482 /* Lens.m */,
 				E81D6CBD1A17FEED00ACA39D /* main.m */,
+				E82BB6271A19040A00A41482 /* StructLens.h */,
+				E82BB6281A19040A00A41482 /* StructLens.m */,
 			);
 			path = ObjCLenses;
 			sourceTree = "<group>";
@@ -119,6 +144,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E81D6CBE1A17FEED00ACA39D /* main.m in Sources */,
+				E82BB6231A18EC1C00A41482 /* ArrayLens.m in Sources */,
+				E82BB61D1A18EB0800A41482 /* CompositeLens.m in Sources */,
+				E82BB6201A18EB6F00A41482 /* KVCLens.m in Sources */,
+				E82BB6291A19040A00A41482 /* StructLens.m in Sources */,
+				E82BB61A1A18EAEA00A41482 /* Lens.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +262,7 @@
 				E81D6CC31A17FEED00ACA39D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
