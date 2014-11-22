@@ -26,6 +26,10 @@
 }
 
 - (NSDictionary*)set:(id)value over:(NSDictionary*)subject {
+    if (!subject) {
+        return nil;
+    }
+    
     NSMutableDictionary* newSubject = [subject mutableCopy];
     if (value) {
         newSubject[self.key] = value;

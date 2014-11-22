@@ -27,6 +27,10 @@
 }
 
 - (NSSet*)set:(NSNumber*)value over:(NSSet*)subject {
+    if (!subject) {
+        return nil;
+    }
+    
     NSAssert([value isKindOfClass:[NSNumber class]], @"set lens setters take a boolean");
     NSMutableSet* newSubject = [subject mutableCopy];
     

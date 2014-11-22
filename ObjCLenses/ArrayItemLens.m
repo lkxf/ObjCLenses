@@ -32,7 +32,11 @@
     return [subject objectAtIndex:((self.index + subject.count) % subject.count)];
 }
 
-- (id)set:(id)value over:(NSArray*)subject {
+- (NSArray*)set:(id)value over:(NSArray*)subject {
+    if (!subject) {
+        return nil;
+    }
+    
     NSAssert(value, @"cannot set nil as array element");
     NSInteger idx = (self.index + subject.count) % subject.count;
     

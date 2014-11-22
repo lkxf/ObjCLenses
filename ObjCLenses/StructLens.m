@@ -101,7 +101,11 @@ static NSNumber* Numberify(NSValue* value) {
     return numValue? numValue: value;
 }
 
-- (id)set:(id)value over:(id)subject {
+- (NSValue*)set:(id)value over:(NSValue*)subject {
+    if (!subject) {
+        return nil;
+    }
+    
     char newBuf[_structKeyPath._structSize];
     [subject getValue:newBuf];
     [value getValue:newBuf + _structKeyPath._fieldOffset];
