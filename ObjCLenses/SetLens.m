@@ -15,7 +15,7 @@
 
 @implementation SetLens
 
-+ (instancetype)lensWithObject:(id)object {
++ (instancetype)lensToObject:(id)object {
     NSAssert(object, @"object must not be nil");
     SetLens* lens = [SetLens new];
     lens.object = object;

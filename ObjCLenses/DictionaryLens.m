@@ -14,7 +14,7 @@
 
 @implementation DictionaryLens
 
-+ (instancetype)lensWithKey:(id<NSCopying>)key {
++ (instancetype)lensToKey:(id<NSCopying>)key {
     NSAssert(key, @"key must not be nil");
     DictionaryLens* lens = [DictionaryLens new];
     lens.key = key;

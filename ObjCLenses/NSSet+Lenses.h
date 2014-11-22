@@ -1,15 +1,15 @@
 //
-//  SetLens.h
+//  NSSet+Lenses.h
 //  ObjCLenses
 //
 //  Created by Tamas Lustyik on 2014.11.22..
 //  Copyright (c) 2014 Tamas Lustyik. All rights reserved.
 //
 
-#import "Lens.h"
+#import <Foundation/Foundation.h>
 
-@interface SetLens : Lens
+@class Lens;
 
-+ (instancetype)lensToObject:(id)object;
-
+@interface NSSet (Lenses)
++ (Lens*)lensToObject:(id)object;
 @end

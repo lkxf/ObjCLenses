@@ -10,6 +10,6 @@
 
 @interface DictionaryLens : Lens
 
-+ (instancetype)lensWithKey:(id<NSCopying>)key;
++ (instancetype)lensToKey:(id<NSCopying>)key;
 
 @end
