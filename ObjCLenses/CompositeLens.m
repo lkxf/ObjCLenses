@@ -10,17 +10,17 @@
 
 @interface CompositeLens ()
 @property (nonatomic, copy) LensViewBlock viewBlock;
-@property (nonatomic, copy) LensOverBlock overBlock;
+@property (nonatomic, copy) LensSetBlock setBlock;
 @end
 
 @implementation CompositeLens
 
 - (instancetype)initWithViewBlock:(LensViewBlock)viewBlock
-                        overBlock:(LensOverBlock)overBlock {
+                         setBlock:(LensSetBlock)setBlock {
     self = [super init];
     if (self) {
         self.viewBlock = viewBlock;
-        self.overBlock = overBlock;
+        self.setBlock = setBlock;
     }
     return self;
 }
@@ -29,8 +29,8 @@
     return self.viewBlock(subject);
 }
 
-- (id)map:(id(^)(id))func over:(id)subject {
-    return self.overBlock(func, subject);
+- (id)set:(id)value over:(id)subject {
+    return self.setBlock(value, subject);
 }
 
 @end

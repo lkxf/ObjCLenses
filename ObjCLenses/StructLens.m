@@ -101,13 +101,10 @@ static NSNumber* Numberify(NSValue* value) {
     return numValue? numValue: value;
 }
 
-- (id)map:(id(^)(id))func over:(NSValue*)subject {
-    NSValue* oldFieldValue = [self view:subject];
-    NSValue* newFieldValue = func(oldFieldValue);
-    
+- (id)set:(id)value over:(id)subject {
     char newBuf[_structKeyPath._structSize];
     [subject getValue:newBuf];
-    [newFieldValue getValue:newBuf + _structKeyPath._fieldOffset];
+    [value getValue:newBuf + _structKeyPath._fieldOffset];
     
     return [NSValue valueWithBytes:newBuf
                           objCType:_structKeyPath._structType];

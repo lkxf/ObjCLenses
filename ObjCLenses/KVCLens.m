@@ -30,15 +30,14 @@
     return [subject valueForKeyPath:_keyPath];
 }
 
-- (id)map:(id(^)(id))func over:(id)subject {
+- (id)set:(id)value over:(id)subject {
     NSAssert([subject conformsToProtocol:@protocol(NSCopying)],
              @"keypath lens subjects must conform to NSCopying when mapped over");
     
     id copiedSubject = [subject copy];
     NSAssert(copiedSubject != subject, @"copy must create an independent object");
     
-    id oldValue = [copiedSubject valueForKeyPath:_keyPath];
-    [copiedSubject setValue:func(oldValue) forKeyPath:_keyPath];
+    [copiedSubject setValue:value forKeyPath:_keyPath];
     return copiedSubject;
 }
 

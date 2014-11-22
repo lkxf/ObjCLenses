@@ -8,7 +8,7 @@
 
 #import "Lens.h"
 
-#import "ArrayLens.h"
+#import "ArrayItemLens.h"
 #import "CompositeLens.h"
 #import "KVCLens.h"
 #import "StructLens.h"
@@ -22,15 +22,15 @@
 }
 
 + (Lens*)lensToItemAtIndex:(NSInteger)index {
-    return [ArrayLens lensToItemAtIndex:index];
+    return [ArrayItemLens lensToItemAtIndex:index];
 }
 
 + (Lens*)lensToFirstItem {
-    return [ArrayLens lensToFirstItem];
+    return [ArrayItemLens lensToFirstItem];
 }
 
 + (Lens*)lensToLastItem {
-    return [ArrayLens lensToLastItem];
+    return [ArrayItemLens lensToLastItem];
 }
 
 + (Lens*)lensToStructKeyPath:(StructKeyPath)structKeyPath {
@@ -43,12 +43,10 @@
     CompositeLens* compositeLens = [[CompositeLens alloc] initWithViewBlock:^id(id subject) {
         __strong Lens* self = weakSelf;
         return [lens view:[self view:subject]];
-    } overBlock:^id(Mapping mapping, id subject) {
+    } setBlock:^id(id value, id subject) {
         __strong Lens* self = weakSelf;
-        id innerSubject = [self view:subject];
-        id changedInnerSubject = [lens map:mapping over:innerSubject];
-        
-        return [self map:^id(id x) { return changedInnerSubject; }
+        id intermediateSubject = [lens set:value over:[self view:subject]];
+        return [self set:intermediateSubject
                     over:subject];
     }];
     
@@ -60,12 +58,11 @@
 }
 
 - (id)map:(Mapping)func over:(id)subject {
-    return func(subject);
+    return [self set:func([self view:subject]) over:subject];
 }
 
 - (id)set:(id)value over:(id)subject {
-    return [self map:^id(id x) { return value; }
-                over:subject];
+    return subject;
 }
 
 @end

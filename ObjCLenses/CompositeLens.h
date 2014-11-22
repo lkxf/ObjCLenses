@@ -11,10 +11,10 @@
 typedef id (^Mapping)(id value);
 
 typedef id (^LensViewBlock)(id subject);
-typedef id (^LensOverBlock)(Mapping mapping, id subject);
+typedef id (^LensSetBlock)(id value, id subject);
 
 
 @interface CompositeLens : Lens
 - (instancetype)initWithViewBlock:(LensViewBlock)viewBlock
-                        overBlock:(LensOverBlock)overBlock;
+                         setBlock:(LensSetBlock)setBlock;
 @end

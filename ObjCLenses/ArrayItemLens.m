@@ -1,21 +1,21 @@
 //
-//  ArrayLens.m
+//  ArrayItemLens.m
 //  ObjCLenses
 //
 //  Created by Tamas Lustyik on 2014.11.16..
 //  Copyright (c) 2014 Tamas Lustyik. All rights reserved.
 //
 
-#import "ArrayLens.h"
+#import "ArrayItemLens.h"
 
-@interface ArrayLens ()
+@interface ArrayItemLens ()
 @property (nonatomic, assign) NSInteger index;
 @end
 
-@implementation ArrayLens
+@implementation ArrayItemLens
 
 + (instancetype)lensToItemAtIndex:(NSInteger)index {
-    ArrayLens* lens = [ArrayLens new];
+    ArrayItemLens* lens = [ArrayItemLens new];
     lens.index = index;
     return lens;
 }
@@ -32,12 +32,12 @@
     return [subject objectAtIndex:((self.index + subject.count) % subject.count)];
 }
 
-- (id)map:(id(^)(id))func over:(NSArray*)subject {
+- (id)set:(id)value over:(NSArray*)subject {
+    NSAssert(value, @"cannot set nil as array element");
     NSInteger idx = (self.index + subject.count) % subject.count;
-    id oldValue = [subject objectAtIndex:idx];
     
     NSMutableArray* mutableCopy = [NSMutableArray arrayWithArray:[subject subarrayWithRange:NSMakeRange(0, idx)]];
-    [mutableCopy addObject:func(oldValue)];
+    [mutableCopy addObject:value];
     if (idx < subject.count - 1) {
         [mutableCopy addObjectsFromArray:[subject subarrayWithRange:NSMakeRange(idx + 1, subject.count - idx - 1)]];
     }
