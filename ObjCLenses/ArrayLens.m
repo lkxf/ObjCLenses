@@ -1,21 +1,21 @@
 //
-//  ArrayItemLens.m
+//  ArrayLens.m
 //  ObjCLenses
 //
 //  Created by Tamas Lustyik on 2014.11.16..
 //  Copyright (c) 2014 Tamas Lustyik. All rights reserved.
 //
 
-#import "ArrayItemLens.h"
+#import "ArrayLens.h"
 
-@interface ArrayItemLens ()
+@interface ArrayLens ()
 @property (nonatomic, assign) NSInteger index;
 @end
 
-@implementation ArrayItemLens
+@implementation ArrayLens
 
 + (instancetype)lensToItemAtIndex:(NSInteger)index {
-    ArrayItemLens* lens = [ArrayItemLens new];
+    ArrayLens* lens = [ArrayLens new];
     lens.index = index;
     return lens;
 }

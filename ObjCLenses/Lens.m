@@ -8,7 +8,7 @@
 
 #import "Lens.h"
 
-#import "ArrayItemLens.h"
+#import "ArrayLens.h"
 #import "CompositeLens.h"
 #import "KVCLens.h"
 #import "StructLens.h"
@@ -22,15 +22,15 @@
 }
 
 + (Lens*)lensToItemAtIndex:(NSInteger)index {
-    return [ArrayItemLens lensToItemAtIndex:index];
+    return [ArrayLens lensToItemAtIndex:index];
 }
 
 + (Lens*)lensToFirstItem {
-    return [ArrayItemLens lensToFirstItem];
+    return [ArrayLens lensToFirstItem];
 }
 
 + (Lens*)lensToLastItem {
-    return [ArrayItemLens lensToLastItem];
+    return [ArrayLens lensToLastItem];
 }
 
 + (Lens*)lensToStructKeyPath:(StructKeyPath)structKeyPath {

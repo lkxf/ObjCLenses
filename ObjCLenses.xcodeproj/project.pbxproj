@@ -13,7 +13,7 @@
 		E82BB61A1A18EAEA00A41482 /* Lens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6191A18EAEA00A41482 /* Lens.m */; };
 		E82BB61D1A18EB0800A41482 /* CompositeLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61C1A18EB0800A41482 /* CompositeLens.m */; };
 		E82BB6201A18EB6F00A41482 /* KVCLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61F1A18EB6F00A41482 /* KVCLens.m */; };
-		E82BB6231A18EC1C00A41482 /* ArrayItemLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6221A18EC1C00A41482 /* ArrayItemLens.m */; };
+		E82BB6231A18EC1C00A41482 /* ArrayLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6221A18EC1C00A41482 /* ArrayLens.m */; };
 		E82BB6291A19040A00A41482 /* StructLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6281A19040A00A41482 /* StructLens.m */; };
 		E84E42181A1921D6008F1A87 /* PersonExample.m in Sources */ = {isa = PBXBuildFile; fileRef = E84E42171A1921D6008F1A87 /* PersonExample.m */; };
 /* End PBXBuildFile section */
@@ -43,8 +43,8 @@
 		E82BB61C1A18EB0800A41482 /* CompositeLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompositeLens.m; sourceTree = "<group>"; };
 		E82BB61E1A18EB6F00A41482 /* KVCLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVCLens.h; sourceTree = "<group>"; };
 		E82BB61F1A18EB6F00A41482 /* KVCLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVCLens.m; sourceTree = "<group>"; };
-		E82BB6211A18EC1C00A41482 /* ArrayItemLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayItemLens.h; sourceTree = "<group>"; };
-		E82BB6221A18EC1C00A41482 /* ArrayItemLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayItemLens.m; sourceTree = "<group>"; };
+		E82BB6211A18EC1C00A41482 /* ArrayLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayLens.h; sourceTree = "<group>"; };
+		E82BB6221A18EC1C00A41482 /* ArrayLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayLens.m; sourceTree = "<group>"; };
 		E82BB6271A19040A00A41482 /* StructLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructLens.h; sourceTree = "<group>"; };
 		E82BB6281A19040A00A41482 /* StructLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructLens.m; sourceTree = "<group>"; };
 		E84E42161A1921D6008F1A87 /* PersonExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonExample.h; sourceTree = "<group>"; };
@@ -82,8 +82,8 @@
 		E81D6CBC1A17FEED00ACA39D /* ObjCLenses */ = {
 			isa = PBXGroup;
 			children = (
-				E82BB6211A18EC1C00A41482 /* ArrayItemLens.h */,
-				E82BB6221A18EC1C00A41482 /* ArrayItemLens.m */,
+				E82BB6211A18EC1C00A41482 /* ArrayLens.h */,
+				E82BB6221A18EC1C00A41482 /* ArrayLens.m */,
 				E82BB61B1A18EB0800A41482 /* CompositeLens.h */,
 				E82BB61C1A18EB0800A41482 /* CompositeLens.m */,
 				E80FCCD91A213A69006567BD /* DictionaryLens.h */,
@@ -167,7 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E81D6CBE1A17FEED00ACA39D /* main.m in Sources */,
-				E82BB6231A18EC1C00A41482 /* ArrayItemLens.m in Sources */,
+				E82BB6231A18EC1C00A41482 /* ArrayLens.m in Sources */,
 				E80FCCD81A2136C1006567BD /* SetLens.m in Sources */,
 				E82BB61D1A18EB0800A41482 /* CompositeLens.m in Sources */,
 				E82BB6201A18EB6F00A41482 /* KVCLens.m in Sources */,

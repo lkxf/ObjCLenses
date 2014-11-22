@@ -1,5 +1,5 @@
 //
-//  ArrayItemLens.h
+//  ArrayLens.h
 //  ObjCLenses
 //
 //  Created by Tamas Lustyik on 2014.11.16..
@@ -8,7 +8,7 @@
 
 #import "Lens.h"
 
-@interface ArrayItemLens : Lens
+@interface ArrayLens : Lens
 + (instancetype)lensToItemAtIndex:(NSInteger)index;
 + (instancetype)lensToFirstItem;
 + (instancetype)lensToLastItem;
