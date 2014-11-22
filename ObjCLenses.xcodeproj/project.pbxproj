@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E80FCCD81A2136C1006567BD /* SetLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCD71A2136C1006567BD /* SetLens.m */; };
+		E80FCCDB1A213A69006567BD /* DictionaryLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCDA1A213A69006567BD /* DictionaryLens.m */; };
 		E81D6CBE1A17FEED00ACA39D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E81D6CBD1A17FEED00ACA39D /* main.m */; };
 		E82BB61A1A18EAEA00A41482 /* Lens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6191A18EAEA00A41482 /* Lens.m */; };
 		E82BB61D1A18EB0800A41482 /* CompositeLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61C1A18EB0800A41482 /* CompositeLens.m */; };
@@ -29,6 +31,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E80FCCD61A2136C1006567BD /* SetLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetLens.h; sourceTree = "<group>"; };
+		E80FCCD71A2136C1006567BD /* SetLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetLens.m; sourceTree = "<group>"; };
+		E80FCCD91A213A69006567BD /* DictionaryLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryLens.h; sourceTree = "<group>"; };
+		E80FCCDA1A213A69006567BD /* DictionaryLens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryLens.m; sourceTree = "<group>"; };
 		E81D6CBA1A17FEED00ACA39D /* ObjCLenses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjCLenses; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81D6CBD1A17FEED00ACA39D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E82BB6181A18EAEA00A41482 /* Lens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lens.h; sourceTree = "<group>"; };
@@ -80,11 +86,15 @@
 				E82BB6221A18EC1C00A41482 /* ArrayItemLens.m */,
 				E82BB61B1A18EB0800A41482 /* CompositeLens.h */,
 				E82BB61C1A18EB0800A41482 /* CompositeLens.m */,
+				E80FCCD91A213A69006567BD /* DictionaryLens.h */,
+				E80FCCDA1A213A69006567BD /* DictionaryLens.m */,
 				E82BB61E1A18EB6F00A41482 /* KVCLens.h */,
 				E82BB61F1A18EB6F00A41482 /* KVCLens.m */,
 				E82BB6181A18EAEA00A41482 /* Lens.h */,
 				E82BB6191A18EAEA00A41482 /* Lens.m */,
 				E81D6CBD1A17FEED00ACA39D /* main.m */,
+				E80FCCD61A2136C1006567BD /* SetLens.h */,
+				E80FCCD71A2136C1006567BD /* SetLens.m */,
 				E82BB6271A19040A00A41482 /* StructLens.h */,
 				E82BB6281A19040A00A41482 /* StructLens.m */,
 			);
@@ -158,9 +168,11 @@
 			files = (
 				E81D6CBE1A17FEED00ACA39D /* main.m in Sources */,
 				E82BB6231A18EC1C00A41482 /* ArrayItemLens.m in Sources */,
+				E80FCCD81A2136C1006567BD /* SetLens.m in Sources */,
 				E82BB61D1A18EB0800A41482 /* CompositeLens.m in Sources */,
 				E82BB6201A18EB6F00A41482 /* KVCLens.m in Sources */,
 				E82BB6291A19040A00A41482 /* StructLens.m in Sources */,
+				E80FCCDB1A213A69006567BD /* DictionaryLens.m in Sources */,
 				E84E42181A1921D6008F1A87 /* PersonExample.m in Sources */,
 				E82BB61A1A18EAEA00A41482 /* Lens.m in Sources */,
 			);
