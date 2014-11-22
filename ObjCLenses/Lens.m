@@ -38,13 +38,10 @@
 }
 
 - (Lens*)lensByAppendingLens:(Lens*)lens {
-    __weak Lens* weakSelf = self;
-    
     CompositeLens* compositeLens = [[CompositeLens alloc] initWithViewBlock:^id(id subject) {
-        __strong Lens* self = weakSelf;
-        return [lens view:[self view:subject]];
+        id intermediateSubject = [self view:subject];
+        return [lens view:intermediateSubject];
     } setBlock:^id(id value, id subject) {
-        __strong Lens* self = weakSelf;
         id intermediateSubject = [lens set:value over:[self view:subject]];
         return [self set:intermediateSubject
                     over:subject];
