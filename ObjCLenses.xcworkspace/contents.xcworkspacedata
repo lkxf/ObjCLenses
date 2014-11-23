@@ -4,4 +4,7 @@
    <FileRef
       location = "group:ObjCLenses/ObjCLenses.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:RACLenses/RACLenses.xcodeproj">
+   </FileRef>
 </Workspace>

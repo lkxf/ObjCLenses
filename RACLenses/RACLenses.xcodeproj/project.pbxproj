@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E80FCD5B1A229C11006567BD /* RACLenses.h in Headers */ = {isa = PBXBuildFile; fileRef = E80FCD5A1A229C11006567BD /* RACLenses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E80FCD7B1A229EB8006567BD /* ObjCLenses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80FCD7A1A229EB8006567BD /* ObjCLenses.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E80FCD551A229C11006567BD /* RACLenses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RACLenses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80FCD591A229C11006567BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80FCD5A1A229C11006567BD /* RACLenses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACLenses.h; sourceTree = "<group>"; };
+		E80FCD7A1A229EB8006567BD /* ObjCLenses.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjCLenses.framework; path = "../../../../../../Users/lvsti/Library/Developer/Xcode/DerivedData/ObjCLenses-cwdafjkvnulhjpfswgzxvaghpauc/Build/Products/Debug/ObjCLenses.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E80FCD511A229C11006567BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80FCD7B1A229EB8006567BD /* ObjCLenses.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E80FCD4B1A229C11006567BD = {
+			isa = PBXGroup;
+			children = (
+				E80FCD7A1A229EB8006567BD /* ObjCLenses.framework */,
+				E80FCD571A229C11006567BD /* RACLenses */,
+				E80FCD561A229C11006567BD /* Products */,
+				05E574BC9551B1FD8E9DC140 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E80FCD561A229C11006567BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E80FCD551A229C11006567BD /* RACLenses.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E80FCD571A229C11006567BD /* RACLenses */ = {
+			isa = PBXGroup;
+			children = (
+				E80FCD5A1A229C11006567BD /* RACLenses.h */,
+				E80FCD581A229C11006567BD /* Supporting Files */,
+			);
+			path = RACLenses;
+			sourceTree = "<group>";
+		};
+		E80FCD581A229C11006567BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E80FCD591A229C11006567BD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E80FCD521A229C11006567BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80FCD5B1A229C11006567BD /* RACLenses.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E80FCD541A229C11006567BD /* RACLensesFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E80FCD6B1A229C12006567BD /* Build configuration list for PBXNativeTarget "RACLensesFramework" */;
+			buildPhases = (
+				E80FCD501A229C11006567BD /* Sources */,
+				E80FCD511A229C11006567BD /* Frameworks */,
+				E80FCD521A229C11006567BD /* Headers */,
+				E80FCD531A229C11006567BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RACLensesFramework;
+			productName = RACLenses;
+			productReference = E80FCD551A229C11006567BD /* RACLenses.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E80FCD4C1A229C11006567BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Tamas Lustyik";
+				TargetAttributes = {
+					E80FCD541A229C11006567BD = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = E80FCD4F1A229C11006567BD /* Build configuration list for PBXProject "RACLenses" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E80FCD4B1A229C11006567BD;
+			productRefGroup = E80FCD561A229C11006567BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E80FCD541A229C11006567BD /* RACLensesFramework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E80FCD531A229C11006567BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E80FCD501A229C11006567BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E80FCD691A229C12006567BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E80FCD6A1A229C12006567BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E80FCD6C1A229C12006567BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ObjCLenses-cwdafjkvnulhjpfswgzxvaghpauc/Build/Products/Debug",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = RACLenses/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ObjCLenses-cwdafjkvnulhjpfswgzxvaghpauc/Build/Products/Debug",
+				);
+				PRODUCT_NAME = RACLenses;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E80FCD6D1A229C12006567BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ObjCLenses-cwdafjkvnulhjpfswgzxvaghpauc/Build/Products/Debug",
+				);
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = RACLenses/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ObjCLenses-cwdafjkvnulhjpfswgzxvaghpauc/Build/Products/Debug",
+				);
+				PRODUCT_NAME = RACLenses;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E80FCD4F1A229C11006567BD /* Build configuration list for PBXProject "RACLenses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80FCD691A229C12006567BD /* Debug */,
+				E80FCD6A1A229C12006567BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E80FCD6B1A229C12006567BD /* Build configuration list for PBXNativeTarget "RACLensesFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80FCD6C1A229C12006567BD /* Debug */,
+				E80FCD6D1A229C12006567BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E80FCD4C1A229C11006567BD /* Project object */;
+}
