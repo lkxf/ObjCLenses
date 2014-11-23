@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E80FCCD81A2136C1006567BD /* SetLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCD71A2136C1006567BD /* SetLens.m */; };
-		E80FCCDB1A213A69006567BD /* DictionaryLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCDA1A213A69006567BD /* DictionaryLens.m */; };
-		E80FCCDE1A2140FA006567BD /* NSDictionary+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCDD1A2140FA006567BD /* NSDictionary+Lenses.m */; };
-		E80FCCE11A21415F006567BD /* NSArray+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE01A21415F006567BD /* NSArray+Lenses.m */; };
-		E80FCCE41A2142A7006567BD /* NSSet+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE31A2142A7006567BD /* NSSet+Lenses.m */; };
-		E80FCCE71A2271CA006567BD /* Lens+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE61A2271CA006567BD /* Lens+DSL.m */; };
 		E80FCCEA1A2272E8006567BD /* DSLExample.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE91A2272E8006567BD /* DSLExample.m */; };
-		E81D6CBE1A17FEED00ACA39D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E81D6CBD1A17FEED00ACA39D /* main.m */; };
-		E82BB61A1A18EAEA00A41482 /* Lens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6191A18EAEA00A41482 /* Lens.m */; };
-		E82BB61D1A18EB0800A41482 /* CompositeLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61C1A18EB0800A41482 /* CompositeLens.m */; };
-		E82BB6201A18EB6F00A41482 /* KVCLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61F1A18EB6F00A41482 /* KVCLens.m */; };
-		E82BB6231A18EC1C00A41482 /* ArrayLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6221A18EC1C00A41482 /* ArrayLens.m */; };
-		E82BB6291A19040A00A41482 /* StructLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6281A19040A00A41482 /* StructLens.m */; };
+		E80FCD011A229864006567BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCD001A229864006567BD /* main.m */; };
+		E80FCD1D1A2298F6006567BD /* ArrayLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6221A18EC1C00A41482 /* ArrayLens.m */; };
+		E80FCD1E1A2298F6006567BD /* CompositeLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61C1A18EB0800A41482 /* CompositeLens.m */; };
+		E80FCD1F1A2298F6006567BD /* DictionaryLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCDA1A213A69006567BD /* DictionaryLens.m */; };
+		E80FCD201A2298F6006567BD /* KVCLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61F1A18EB6F00A41482 /* KVCLens.m */; };
+		E80FCD211A2298F6006567BD /* Lens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6191A18EAEA00A41482 /* Lens.m */; };
+		E80FCD221A2298F6006567BD /* Lens+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE61A2271CA006567BD /* Lens+DSL.m */; };
+		E80FCD231A2298F6006567BD /* NSArray+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE01A21415F006567BD /* NSArray+Lenses.m */; };
+		E80FCD241A2298F6006567BD /* NSDictionary+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCDD1A2140FA006567BD /* NSDictionary+Lenses.m */; };
+		E80FCD251A2298F6006567BD /* NSSet+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE31A2142A7006567BD /* NSSet+Lenses.m */; };
+		E80FCD261A2298F6006567BD /* SetLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCD71A2136C1006567BD /* SetLens.m */; };
+		E80FCD271A2298F6006567BD /* StructLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6281A19040A00A41482 /* StructLens.m */; };
+		E80FCD2A1A229967006567BD /* libObjCLensesLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E80FCD061A2298D5006567BD /* libObjCLensesLib.a */; };
+		E80FCD351A229A89006567BD /* ObjCLenses.h in Headers */ = {isa = PBXBuildFile; fileRef = E80FCD341A229A89006567BD /* ObjCLenses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E80FCD491A229AFB006567BD /* Lens.h in Headers */ = {isa = PBXBuildFile; fileRef = E82BB6181A18EAEA00A41482 /* Lens.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E80FCD4A1A229AFB006567BD /* Lens+DSL.h in Headers */ = {isa = PBXBuildFile; fileRef = E80FCCE51A2271CA006567BD /* Lens+DSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E84E42181A1921D6008F1A87 /* PersonExample.m in Sources */ = {isa = PBXBuildFile; fileRef = E84E42171A1921D6008F1A87 /* PersonExample.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E80FCD281A229960006567BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E81D6CB21A17FEED00ACA39D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E80FCD051A2298D5006567BD;
+			remoteInfo = ObjCLensesLib;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E81D6CB81A17FEED00ACA39D /* CopyFiles */ = {
@@ -50,8 +64,12 @@
 		E80FCCE61A2271CA006567BD /* Lens+DSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Lens+DSL.m"; sourceTree = "<group>"; };
 		E80FCCE81A2272E8006567BD /* DSLExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSLExample.h; sourceTree = "<group>"; };
 		E80FCCE91A2272E8006567BD /* DSLExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSLExample.m; sourceTree = "<group>"; };
+		E80FCD001A229864006567BD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E80FCD061A2298D5006567BD /* libObjCLensesLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjCLensesLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80FCD301A229A89006567BD /* ObjCLenses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjCLenses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E80FCD331A229A89006567BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E80FCD341A229A89006567BD /* ObjCLenses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCLenses.h; sourceTree = "<group>"; };
 		E81D6CBA1A17FEED00ACA39D /* ObjCLenses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjCLenses; sourceTree = BUILT_PRODUCTS_DIR; };
-		E81D6CBD1A17FEED00ACA39D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E82BB6181A18EAEA00A41482 /* Lens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lens.h; sourceTree = "<group>"; };
 		E82BB6191A18EAEA00A41482 /* Lens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lens.m; sourceTree = "<group>"; };
 		E82BB61B1A18EB0800A41482 /* CompositeLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositeLens.h; sourceTree = "<group>"; };
@@ -67,21 +85,54 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E81D6CB71A17FEED00ACA39D /* Frameworks */ = {
+		E80FCD031A2298D5006567BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E80FCD2C1A229A89006567BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81D6CB71A17FEED00ACA39D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80FCD2A1A229967006567BD /* libObjCLensesLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E80FCD311A229A89006567BD /* ObjCLensesFramework */ = {
+			isa = PBXGroup;
+			children = (
+				E80FCD341A229A89006567BD /* ObjCLenses.h */,
+				E80FCD321A229A89006567BD /* Supporting Files */,
+			);
+			path = ObjCLensesFramework;
+			sourceTree = "<group>";
+		};
+		E80FCD321A229A89006567BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E80FCD331A229A89006567BD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		E81D6CB11A17FEED00ACA39D = {
 			isa = PBXGroup;
 			children = (
 				E84E42151A1921C0008F1A87 /* Examples */,
 				E81D6CBC1A17FEED00ACA39D /* ObjCLenses */,
+				E80FCD311A229A89006567BD /* ObjCLensesFramework */,
 				E81D6CBB1A17FEED00ACA39D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				E81D6CBA1A17FEED00ACA39D /* ObjCLenses */,
+				E80FCD061A2298D5006567BD /* libObjCLensesLib.a */,
+				E80FCD301A229A89006567BD /* ObjCLenses.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,7 +162,6 @@
 				E82BB6191A18EAEA00A41482 /* Lens.m */,
 				E80FCCE51A2271CA006567BD /* Lens+DSL.h */,
 				E80FCCE61A2271CA006567BD /* Lens+DSL.m */,
-				E81D6CBD1A17FEED00ACA39D /* main.m */,
 				E80FCCDF1A21415F006567BD /* NSArray+Lenses.h */,
 				E80FCCE01A21415F006567BD /* NSArray+Lenses.m */,
 				E80FCCDC1A2140FA006567BD /* NSDictionary+Lenses.h */,
@@ -127,6 +179,7 @@
 		E84E42151A1921C0008F1A87 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				E80FCD001A229864006567BD /* main.m */,
 				E84E42161A1921D6008F1A87 /* PersonExample.h */,
 				E84E42171A1921D6008F1A87 /* PersonExample.m */,
 				E80FCCE81A2272E8006567BD /* DSLExample.h */,
@@ -137,10 +190,65 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		E80FCD041A2298D5006567BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E80FCD2D1A229A89006567BD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80FCD491A229AFB006567BD /* Lens.h in Headers */,
+				E80FCD4A1A229AFB006567BD /* Lens+DSL.h in Headers */,
+				E80FCD351A229A89006567BD /* ObjCLenses.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		E81D6CB91A17FEED00ACA39D /* ObjCLenses */ = {
+		E80FCD051A2298D5006567BD /* ObjCLensesLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E81D6CC11A17FEED00ACA39D /* Build configuration list for PBXNativeTarget "ObjCLenses" */;
+			buildConfigurationList = E80FCD171A2298D6006567BD /* Build configuration list for PBXNativeTarget "ObjCLensesLib" */;
+			buildPhases = (
+				E80FCD021A2298D5006567BD /* Sources */,
+				E80FCD031A2298D5006567BD /* Frameworks */,
+				E80FCD041A2298D5006567BD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjCLensesLib;
+			productName = ObjCLenses;
+			productReference = E80FCD061A2298D5006567BD /* libObjCLensesLib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E80FCD2F1A229A89006567BD /* ObjCLensesFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E80FCD431A229A89006567BD /* Build configuration list for PBXNativeTarget "ObjCLensesFramework" */;
+			buildPhases = (
+				E80FCD2B1A229A89006567BD /* Sources */,
+				E80FCD2C1A229A89006567BD /* Frameworks */,
+				E80FCD2D1A229A89006567BD /* Headers */,
+				E80FCD2E1A229A89006567BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjCLensesFramework;
+			productName = ObjCLensesFramework;
+			productReference = E80FCD301A229A89006567BD /* ObjCLenses.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E81D6CB91A17FEED00ACA39D /* ObjCLensesDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E81D6CC11A17FEED00ACA39D /* Build configuration list for PBXNativeTarget "ObjCLensesDemo" */;
 			buildPhases = (
 				E81D6CB61A17FEED00ACA39D /* Sources */,
 				E81D6CB71A17FEED00ACA39D /* Frameworks */,
@@ -149,8 +257,9 @@
 			buildRules = (
 			);
 			dependencies = (
+				E80FCD291A229960006567BD /* PBXTargetDependency */,
 			);
-			name = ObjCLenses;
+			name = ObjCLensesDemo;
 			productName = ObjCLenses;
 			productReference = E81D6CBA1A17FEED00ACA39D /* ObjCLenses */;
 			productType = "com.apple.product-type.tool";
@@ -164,6 +273,12 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Tamas Lustyik";
 				TargetAttributes = {
+					E80FCD051A2298D5006567BD = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					E80FCD2F1A229A89006567BD = {
+						CreatedOnToolsVersion = 6.1;
+					};
 					E81D6CB91A17FEED00ACA39D = {
 						CreatedOnToolsVersion = 6.1;
 					};
@@ -181,36 +296,134 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E81D6CB91A17FEED00ACA39D /* ObjCLenses */,
+				E81D6CB91A17FEED00ACA39D /* ObjCLensesDemo */,
+				E80FCD051A2298D5006567BD /* ObjCLensesLib */,
+				E80FCD2F1A229A89006567BD /* ObjCLensesFramework */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E80FCD2E1A229A89006567BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		E80FCD021A2298D5006567BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E80FCD261A2298F6006567BD /* SetLens.m in Sources */,
+				E80FCD231A2298F6006567BD /* NSArray+Lenses.m in Sources */,
+				E80FCD201A2298F6006567BD /* KVCLens.m in Sources */,
+				E80FCD1E1A2298F6006567BD /* CompositeLens.m in Sources */,
+				E80FCD241A2298F6006567BD /* NSDictionary+Lenses.m in Sources */,
+				E80FCD211A2298F6006567BD /* Lens.m in Sources */,
+				E80FCD1D1A2298F6006567BD /* ArrayLens.m in Sources */,
+				E80FCD251A2298F6006567BD /* NSSet+Lenses.m in Sources */,
+				E80FCD221A2298F6006567BD /* Lens+DSL.m in Sources */,
+				E80FCD271A2298F6006567BD /* StructLens.m in Sources */,
+				E80FCD1F1A2298F6006567BD /* DictionaryLens.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E80FCD2B1A229A89006567BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E81D6CB61A17FEED00ACA39D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E81D6CBE1A17FEED00ACA39D /* main.m in Sources */,
-				E82BB6231A18EC1C00A41482 /* ArrayLens.m in Sources */,
-				E80FCCE71A2271CA006567BD /* Lens+DSL.m in Sources */,
-				E80FCCD81A2136C1006567BD /* SetLens.m in Sources */,
-				E80FCCE41A2142A7006567BD /* NSSet+Lenses.m in Sources */,
-				E82BB61D1A18EB0800A41482 /* CompositeLens.m in Sources */,
-				E82BB6201A18EB6F00A41482 /* KVCLens.m in Sources */,
-				E82BB6291A19040A00A41482 /* StructLens.m in Sources */,
 				E80FCCEA1A2272E8006567BD /* DSLExample.m in Sources */,
-				E80FCCE11A21415F006567BD /* NSArray+Lenses.m in Sources */,
-				E80FCCDB1A213A69006567BD /* DictionaryLens.m in Sources */,
 				E84E42181A1921D6008F1A87 /* PersonExample.m in Sources */,
-				E80FCCDE1A2140FA006567BD /* NSDictionary+Lenses.m in Sources */,
-				E82BB61A1A18EAEA00A41482 /* Lens.m in Sources */,
+				E80FCD011A229864006567BD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E80FCD291A229960006567BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E80FCD051A2298D5006567BD /* ObjCLensesLib */;
+			targetProxy = E80FCD281A229960006567BD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		E80FCD181A2298D6006567BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E80FCD191A2298D6006567BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E80FCD441A229A89006567BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ObjCLensesFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = ObjCLenses;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E80FCD451A229A89006567BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ObjCLensesFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = ObjCLenses;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E81D6CBF1A17FEED00ACA39D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -302,6 +515,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E80FCD171A2298D6006567BD /* Build configuration list for PBXNativeTarget "ObjCLensesLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80FCD181A2298D6006567BD /* Debug */,
+				E80FCD191A2298D6006567BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E80FCD431A229A89006567BD /* Build configuration list for PBXNativeTarget "ObjCLensesFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E80FCD441A229A89006567BD /* Debug */,
+				E80FCD451A229A89006567BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E81D6CB51A17FEED00ACA39D /* Build configuration list for PBXProject "ObjCLenses" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -311,7 +540,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E81D6CC11A17FEED00ACA39D /* Build configuration list for PBXNativeTarget "ObjCLenses" */ = {
+		E81D6CC11A17FEED00ACA39D /* Build configuration list for PBXNativeTarget "ObjCLensesDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E81D6CC21A17FEED00ACA39D /* Debug */,

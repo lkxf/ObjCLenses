@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Lens.h"
-
+#import "PersonExample.h"
+#import "DSLExample.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
+        PersonExample();
+        DSLExample();
     }
     return 0;
 }
