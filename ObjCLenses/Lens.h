@@ -32,6 +32,10 @@ typedef struct {
 + (Lens*)lensToFirstItem;
 + (Lens*)lensToLastItem;
 
++ (Lens*)lensToKey:(id<NSCopying>)key;
+
++ (Lens*)lensToObject:(id)object;
+
 + (Lens*)lensToStructKeyPath:(StructKeyPath)structKeyPath;
 
 - (Lens*)lensByAppendingLens:(Lens*)lens;

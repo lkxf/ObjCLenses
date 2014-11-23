@@ -10,7 +10,9 @@
 
 #import "ArrayLens.h"
 #import "CompositeLens.h"
+#import "DictionaryLens.h"
 #import "KVCLens.h"
+#import "SetLens.h"
 #import "StructLens.h"
 
 @implementation Lens
@@ -31,6 +33,14 @@
 
 + (Lens*)lensToLastItem {
     return [ArrayLens lensToLastItem];
+}
+
++ (Lens*)lensToKey:(id<NSCopying>)key {
+    return [DictionaryLens lensToKey:key];
+}
+
++ (Lens*)lensToObject:(id)object {
+    return [SetLens lensToObject:object];
 }
 
 + (Lens*)lensToStructKeyPath:(StructKeyPath)structKeyPath {
@@ -59,7 +69,7 @@
 }
 
 - (id)set:(id)value over:(id)subject {
-    return subject;
+    return value;
 }
 
 @end
