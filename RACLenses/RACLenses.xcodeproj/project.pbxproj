@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E80FCD5B1A229C11006567BD /* RACLenses.h in Headers */ = {isa = PBXBuildFile; fileRef = E80FCD5A1A229C11006567BD /* RACLenses.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E80FCD7B1A229EB8006567BD /* ObjCLenses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80FCD7A1A229EB8006567BD /* ObjCLenses.framework */; };
+		E80FCD7E1A22A39B006567BD /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80FCD7D1A22A39B006567BD /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		E80FCD591A229C11006567BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E80FCD5A1A229C11006567BD /* RACLenses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACLenses.h; sourceTree = "<group>"; };
 		E80FCD7A1A229EB8006567BD /* ObjCLenses.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjCLenses.framework; path = "../../../../../../Users/lvsti/Library/Developer/Xcode/DerivedData/ObjCLenses-cwdafjkvnulhjpfswgzxvaghpauc/Build/Products/Debug/ObjCLenses.framework"; sourceTree = "<group>"; };
+		E80FCD7D1A22A39B006567BD /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +26,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E80FCD7B1A229EB8006567BD /* ObjCLenses.framework in Frameworks */,
+				E80FCD7E1A22A39B006567BD /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,9 +37,9 @@
 			isa = PBXGroup;
 			children = (
 				E80FCD7A1A229EB8006567BD /* ObjCLenses.framework */,
+				E80FCD7C1A22A39B006567BD /* External */,
 				E80FCD571A229C11006567BD /* RACLenses */,
 				E80FCD561A229C11006567BD /* Products */,
-				05E574BC9551B1FD8E9DC140 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +66,15 @@
 				E80FCD591A229C11006567BD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E80FCD7C1A22A39B006567BD /* External */ = {
+			isa = PBXGroup;
+			children = (
+				E80FCD7D1A22A39B006567BD /* ReactiveCocoa.framework */,
+			);
+			name = External;
+			path = ../External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +252,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ObjCLenses-cwdafjkvnulhjpfswgzxvaghpauc/Build/Products/Debug",
+					/Volumes/Lkxf/Projects/OpenSource/ObjCLenses/External,
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = RACLenses/Info.plist;
@@ -265,6 +278,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/ObjCLenses-cwdafjkvnulhjpfswgzxvaghpauc/Build/Products/Debug",
+					/Volumes/Lkxf/Projects/OpenSource/ObjCLenses/External,
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = RACLenses/Info.plist;
