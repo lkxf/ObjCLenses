@@ -12,6 +12,7 @@
 		E80FCCDE1A2140FA006567BD /* NSDictionary+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCDD1A2140FA006567BD /* NSDictionary+Lenses.m */; };
 		E80FCCE11A21415F006567BD /* NSArray+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE01A21415F006567BD /* NSArray+Lenses.m */; };
 		E80FCCE41A2142A7006567BD /* NSSet+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE31A2142A7006567BD /* NSSet+Lenses.m */; };
+		E80FCCE71A2271CA006567BD /* Lens+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE61A2271CA006567BD /* Lens+DSL.m */; };
 		E81D6CBE1A17FEED00ACA39D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E81D6CBD1A17FEED00ACA39D /* main.m */; };
 		E82BB61A1A18EAEA00A41482 /* Lens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6191A18EAEA00A41482 /* Lens.m */; };
 		E82BB61D1A18EB0800A41482 /* CompositeLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61C1A18EB0800A41482 /* CompositeLens.m */; };
@@ -44,6 +45,8 @@
 		E80FCCE01A21415F006567BD /* NSArray+Lenses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Lenses.m"; sourceTree = "<group>"; };
 		E80FCCE21A2142A7006567BD /* NSSet+Lenses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+Lenses.h"; sourceTree = "<group>"; };
 		E80FCCE31A2142A7006567BD /* NSSet+Lenses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+Lenses.m"; sourceTree = "<group>"; };
+		E80FCCE51A2271CA006567BD /* Lens+DSL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lens+DSL.h"; sourceTree = "<group>"; };
+		E80FCCE61A2271CA006567BD /* Lens+DSL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Lens+DSL.m"; sourceTree = "<group>"; };
 		E81D6CBA1A17FEED00ACA39D /* ObjCLenses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjCLenses; sourceTree = BUILT_PRODUCTS_DIR; };
 		E81D6CBD1A17FEED00ACA39D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E82BB6181A18EAEA00A41482 /* Lens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lens.h; sourceTree = "<group>"; };
@@ -101,6 +104,8 @@
 				E82BB61F1A18EB6F00A41482 /* KVCLens.m */,
 				E82BB6181A18EAEA00A41482 /* Lens.h */,
 				E82BB6191A18EAEA00A41482 /* Lens.m */,
+				E80FCCE51A2271CA006567BD /* Lens+DSL.h */,
+				E80FCCE61A2271CA006567BD /* Lens+DSL.m */,
 				E81D6CBD1A17FEED00ACA39D /* main.m */,
 				E80FCCDF1A21415F006567BD /* NSArray+Lenses.h */,
 				E80FCCE01A21415F006567BD /* NSArray+Lenses.m */,
@@ -183,6 +188,7 @@
 			files = (
 				E81D6CBE1A17FEED00ACA39D /* main.m in Sources */,
 				E82BB6231A18EC1C00A41482 /* ArrayLens.m in Sources */,
+				E80FCCE71A2271CA006567BD /* Lens+DSL.m in Sources */,
 				E80FCCD81A2136C1006567BD /* SetLens.m in Sources */,
 				E80FCCE41A2142A7006567BD /* NSSet+Lenses.m in Sources */,
 				E82BB61D1A18EB0800A41482 /* CompositeLens.m in Sources */,
