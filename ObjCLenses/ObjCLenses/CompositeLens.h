@@ -8,13 +8,7 @@
 
 #import "Lens.h"
 
-typedef id (^Mapping)(id value);
-
-typedef id (^LensViewBlock)(id subject);
-typedef id (^LensSetBlock)(id value, id subject);
-
-
 @interface CompositeLens : Lens
-- (instancetype)initWithViewBlock:(LensViewBlock)viewBlock
-                         setBlock:(LensSetBlock)setBlock;
++ (instancetype)lensWithForegroundLens:(Lens*)fgLens
+                        backgroundLens:(Lens*)bgLens;
 @end

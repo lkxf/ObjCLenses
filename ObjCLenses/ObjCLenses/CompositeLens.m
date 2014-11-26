@@ -9,28 +9,27 @@
 #import "CompositeLens.h"
 
 @interface CompositeLens ()
-@property (nonatomic, copy) LensViewBlock viewBlock;
-@property (nonatomic, copy) LensSetBlock setBlock;
+@property (nonatomic, strong) Lens* foregroundLens;
+@property (nonatomic, strong) Lens* backgroundLens;
 @end
 
 @implementation CompositeLens
 
-- (instancetype)initWithViewBlock:(LensViewBlock)viewBlock
-                         setBlock:(LensSetBlock)setBlock {
-    self = [super init];
-    if (self) {
-        self.viewBlock = viewBlock;
-        self.setBlock = setBlock;
-    }
-    return self;
++ (instancetype)lensWithForegroundLens:(Lens*)fgLens
+                        backgroundLens:(Lens*)bgLens {
+    CompositeLens* lens = [CompositeLens new];
+    lens.foregroundLens = fgLens;
+    lens.backgroundLens = bgLens;
+    return lens;
 }
 
 - (id)view:(id)subject {
-    return self.viewBlock(subject);
+    return [self.backgroundLens view:[self.foregroundLens view:subject]];
 }
 
 - (id)set:(id)value over:(id)subject {
-    return self.setBlock(value, subject);
+    id fgSubject = [self.backgroundLens set:value over:[self.foregroundLens view:subject]];
+    return [self.foregroundLens set:fgSubject over:subject];
 }
 
 @end

@@ -48,23 +48,15 @@
 }
 
 - (Lens*)lensByAppendingLens:(Lens*)lens {
-    CompositeLens* compositeLens = [[CompositeLens alloc] initWithViewBlock:^id(id subject) {
-        id intermediateSubject = [self view:subject];
-        return [lens view:intermediateSubject];
-    } setBlock:^id(id value, id subject) {
-        id intermediateSubject = [lens set:value over:[self view:subject]];
-        return [self set:intermediateSubject
-                    over:subject];
-    }];
-    
-    return compositeLens;
+    return [CompositeLens lensWithForegroundLens:self
+                                  backgroundLens:lens];
 }
 
 - (id)view:(id)subject {
     return subject;
 }
 
-- (id)map:(Mapping)func over:(id)subject {
+- (id)map:(id(^)(id))func over:(id)subject {
     return [self set:func([self view:subject]) over:subject];
 }
 
