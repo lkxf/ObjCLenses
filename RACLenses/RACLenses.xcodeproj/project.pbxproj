@@ -10,6 +10,8 @@
 		E80FCD5B1A229C11006567BD /* RACLenses.h in Headers */ = {isa = PBXBuildFile; fileRef = E80FCD5A1A229C11006567BD /* RACLenses.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E80FCD7B1A229EB8006567BD /* ObjCLenses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80FCD7A1A229EB8006567BD /* ObjCLenses.framework */; };
 		E80FCD7E1A22A39B006567BD /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E80FCD7D1A22A39B006567BD /* ReactiveCocoa.framework */; };
+		E85615F51A2668AB003FD178 /* RACStream+Lenses.h in Headers */ = {isa = PBXBuildFile; fileRef = E85615F31A2668AB003FD178 /* RACStream+Lenses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E85615F61A2668AB003FD178 /* RACStream+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E85615F41A2668AB003FD178 /* RACStream+Lenses.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		E80FCD5A1A229C11006567BD /* RACLenses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACLenses.h; sourceTree = "<group>"; };
 		E80FCD7A1A229EB8006567BD /* ObjCLenses.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjCLenses.framework; path = "../../../../../../Users/lvsti/Library/Developer/Xcode/DerivedData/ObjCLenses-cwdafjkvnulhjpfswgzxvaghpauc/Build/Products/Debug/ObjCLenses.framework"; sourceTree = "<group>"; };
 		E80FCD7D1A22A39B006567BD /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ReactiveCocoa.framework; sourceTree = "<group>"; };
+		E85615F31A2668AB003FD178 /* RACStream+Lenses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RACStream+Lenses.h"; sourceTree = "<group>"; };
+		E85615F41A2668AB003FD178 /* RACStream+Lenses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RACStream+Lenses.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		E80FCD571A229C11006567BD /* RACLenses */ = {
 			isa = PBXGroup;
 			children = (
+				E85615F31A2668AB003FD178 /* RACStream+Lenses.h */,
+				E85615F41A2668AB003FD178 /* RACStream+Lenses.m */,
 				E80FCD5A1A229C11006567BD /* RACLenses.h */,
 				E80FCD581A229C11006567BD /* Supporting Files */,
 			);
@@ -85,6 +91,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E80FCD5B1A229C11006567BD /* RACLenses.h in Headers */,
+				E85615F51A2668AB003FD178 /* RACStream+Lenses.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E85615F61A2668AB003FD178 /* RACStream+Lenses.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

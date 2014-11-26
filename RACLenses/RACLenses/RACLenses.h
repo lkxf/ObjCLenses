@@ -14,6 +14,4 @@ FOUNDATION_EXPORT double RACLensesVersionNumber;
 //! Project version string for RACLenses.
 FOUNDATION_EXPORT const unsigned char RACLensesVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <RACLenses/PublicHeader.h>
-
-
+#import <RACLenses/RACStream+Lenses.h>
