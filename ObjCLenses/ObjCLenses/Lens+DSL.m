@@ -13,9 +13,23 @@ Lens* Focus() {
     return [Lens new];
 }
 
+
+@implementation Lens (DSL_Composite)
+
+- (Lens*(^)(Lens*))thru {
+    __weak Lens* weakSelf = self;
+    return ^Lens*(Lens* lens) {
+        __strong Lens* self = weakSelf;
+        return [self lensByAppendingLens:lens];
+    };
+}
+
+@end
+
+
 @implementation Lens (DSL_Array)
 
-- (Lens *(^)())onFirst {
+- (Lens*(^)())onFirst {
     __weak Lens* weakSelf = self;
     return ^Lens*() {
         __strong Lens* self = weakSelf;
@@ -23,7 +37,7 @@ Lens* Focus() {
     };
 }
 
-- (Lens *(^)())onLast {
+- (Lens*(^)())onLast {
     __weak Lens* weakSelf = self;
     return ^Lens*() {
         __strong Lens* self = weakSelf;
@@ -31,7 +45,7 @@ Lens* Focus() {
     };
 }
 
-- (Lens *(^)(NSInteger))onIndex {
+- (Lens*(^)(NSInteger))onIndex {
     __weak Lens* weakSelf = self;
     return ^Lens*(NSInteger idx) {
         __strong Lens* self = weakSelf;
@@ -44,7 +58,7 @@ Lens* Focus() {
 
 @implementation Lens (DSL_Dictionary)
 
-- (Lens *(^)(id<NSCopying>))onKey {
+- (Lens*(^)(id<NSCopying>))onKey {
     __weak Lens* weakSelf = self;
     return ^Lens*(id<NSCopying> key) {
         __strong Lens* self = weakSelf;
@@ -57,7 +71,7 @@ Lens* Focus() {
 
 @implementation Lens (DSL_KVC)
 
-- (Lens *(^)(NSString*))onKeyPath {
+- (Lens*(^)(NSString*))onKeyPath {
     __weak Lens* weakSelf = self;
     return ^Lens*(NSString* keyPath) {
         __strong Lens* self = weakSelf;
@@ -70,7 +84,7 @@ Lens* Focus() {
 
 @implementation Lens (DSL_Struct)
 
-- (Lens *(^)(StructKeyPath))onStructKeyPath {
+- (Lens*(^)(StructKeyPath))onStructKeyPath {
     __weak Lens* weakSelf = self;
     return ^Lens*(StructKeyPath skp) {
         __strong Lens* self = weakSelf;

@@ -10,6 +10,10 @@
 
 Lens* Focus();
 
+@interface Lens (DSL_Composite)
+@property (nonatomic, strong, readonly) Lens* (^thru)(Lens* lens);
+@end
+
 @interface Lens (DSL_Array)
 @property (nonatomic, strong, readonly) Lens* (^onFirst)();
 @property (nonatomic, strong, readonly) Lens* (^onLast)();
