@@ -41,5 +41,13 @@
     }];
 }
 
+- (instancetype)focus:(Lens*)lens flattenMap:(RACStream*(^)(id))block {
+    return [self flattenMap:^RACStream*(id value) {
+        return [block([lens view:value]) map:^id(id x) {
+            return [lens set:x over:value];
+        }];
+    }];
+}
+
 @end
 

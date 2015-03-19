@@ -15,4 +15,5 @@
 - (instancetype)focus:(Lens*)lens mapReplace:(id)value;
 - (instancetype)focus:(Lens*)lens filter:(BOOL(^)(id))block;
 - (instancetype)focus:(Lens*)lens ignore:(id)value;
+- (instancetype)focus:(Lens*)lens flattenMap:(RACStream*(^)(id))block;
 @end
