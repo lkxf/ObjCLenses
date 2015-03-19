@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BEB11F951AA655620079C277 /* Lens+DSL.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE61A2271CA006567BD /* Lens+DSL.m */; };
+		BEB11F961AA655820079C277 /* Lens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6191A18EAEA00A41482 /* Lens.m */; };
+		BEB11F971AA655920079C277 /* ArrayLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6221A18EC1C00A41482 /* ArrayLens.m */; };
+		BEB11F981AA655920079C277 /* CompositeLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61C1A18EB0800A41482 /* CompositeLens.m */; };
+		BEB11F991AA655920079C277 /* DictionaryLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCDA1A213A69006567BD /* DictionaryLens.m */; };
+		BEB11F9A1AA655920079C277 /* KVCLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB61F1A18EB6F00A41482 /* KVCLens.m */; };
+		BEB11F9B1AA655920079C277 /* NSArray+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE01A21415F006567BD /* NSArray+Lenses.m */; };
+		BEB11F9C1AA655920079C277 /* NSDictionary+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCDD1A2140FA006567BD /* NSDictionary+Lenses.m */; };
+		BEB11F9D1AA655920079C277 /* NSSet+Lenses.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE31A2142A7006567BD /* NSSet+Lenses.m */; };
+		BEB11F9E1AA655920079C277 /* SetLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCD71A2136C1006567BD /* SetLens.m */; };
+		BEB11F9F1AA655920079C277 /* StructLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6281A19040A00A41482 /* StructLens.m */; };
 		E80FCCEA1A2272E8006567BD /* DSLExample.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCCE91A2272E8006567BD /* DSLExample.m */; };
 		E80FCD011A229864006567BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E80FCD001A229864006567BD /* main.m */; };
 		E80FCD1D1A2298F6006567BD /* ArrayLens.m in Sources */ = {isa = PBXBuildFile; fileRef = E82BB6221A18EC1C00A41482 /* ArrayLens.m */; };
@@ -69,7 +80,7 @@
 		E80FCD301A229A89006567BD /* ObjCLenses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjCLenses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80FCD331A229A89006567BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E80FCD341A229A89006567BD /* ObjCLenses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCLenses.h; sourceTree = "<group>"; };
-		E81D6CBA1A17FEED00ACA39D /* ObjCLenses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjCLenses; sourceTree = BUILT_PRODUCTS_DIR; };
+		E81D6CBA1A17FEED00ACA39D /* ObjCLensesDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjCLensesDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82BB6181A18EAEA00A41482 /* Lens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lens.h; sourceTree = "<group>"; };
 		E82BB6191A18EAEA00A41482 /* Lens.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lens.m; sourceTree = "<group>"; };
 		E82BB61B1A18EB0800A41482 /* CompositeLens.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompositeLens.h; sourceTree = "<group>"; };
@@ -140,7 +151,7 @@
 		E81D6CBB1A17FEED00ACA39D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E81D6CBA1A17FEED00ACA39D /* ObjCLenses */,
+				E81D6CBA1A17FEED00ACA39D /* ObjCLensesDemo */,
 				E80FCD061A2298D5006567BD /* libObjCLensesLib.a */,
 				E80FCD301A229A89006567BD /* ObjCLenses.framework */,
 			);
@@ -261,7 +272,7 @@
 			);
 			name = ObjCLensesDemo;
 			productName = ObjCLenses;
-			productReference = E81D6CBA1A17FEED00ACA39D /* ObjCLenses */;
+			productReference = E81D6CBA1A17FEED00ACA39D /* ObjCLensesDemo */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -336,6 +347,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB11F9E1AA655920079C277 /* SetLens.m in Sources */,
+				BEB11F9D1AA655920079C277 /* NSSet+Lenses.m in Sources */,
+				BEB11F971AA655920079C277 /* ArrayLens.m in Sources */,
+				BEB11F951AA655620079C277 /* Lens+DSL.m in Sources */,
+				BEB11F9B1AA655920079C277 /* NSArray+Lenses.m in Sources */,
+				BEB11F9A1AA655920079C277 /* KVCLens.m in Sources */,
+				BEB11F9C1AA655920079C277 /* NSDictionary+Lenses.m in Sources */,
+				BEB11F9F1AA655920079C277 /* StructLens.m in Sources */,
+				BEB11F961AA655820079C277 /* Lens.m in Sources */,
+				BEB11F981AA655920079C277 /* CompositeLens.m in Sources */,
+				BEB11F991AA655920079C277 /* DictionaryLens.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +544,7 @@
 				E80FCD191A2298D6006567BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E80FCD431A229A89006567BD /* Build configuration list for PBXNativeTarget "ObjCLensesFramework" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +553,7 @@
 				E80FCD451A229A89006567BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E81D6CB51A17FEED00ACA39D /* Build configuration list for PBXProject "ObjCLenses" */ = {
 			isa = XCConfigurationList;
